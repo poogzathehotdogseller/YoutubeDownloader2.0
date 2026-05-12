@@ -4,7 +4,12 @@
 
 **Direct video & audio download from YouTube on GitHub — no software installation required**
 
+Please ⭐Star the project if you want to support me. (لطفا به این پروژه ستاره بدهید اگر میخواید از من حمایت کنید)
+
+
+
 </div>
+- Kasra Seydi
 
 ---
 
