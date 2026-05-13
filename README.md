@@ -139,5 +139,11 @@ video.mp4.z03
 **How to extract:**
 
 - **Windows:** Place all parts in one folder, right-click the `.zip` file, and select **Extract All...**.
-
+- **Linux Debian**
+```bash 
+sudo apt install 7zip
+```
+```
+7z x [your_file_name].mp4.zip
+```
 ---
