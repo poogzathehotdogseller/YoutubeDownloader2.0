@@ -6,9 +6,8 @@
 
 Please ⭐Star the project if you want to support me. (لطفا به این پروژه ستاره بدهید اگر میخواید از من حمایت کنید)
 
-
-
 </div>
+
 - Kasra Seydi
 
 ---
@@ -20,6 +19,7 @@ Please ⭐Star the project if you want to support me. (لطفا به این پر
 - [🎮 Download Modes](#-download-modes)
 - [⚙️ Advanced Settings](#️-advanced-settings)
 - [🧩 Managing Split Files](#-managing-split-files)
+- [🗑️ Cleaning Up](#️-cleaning-up)
 
 ---
 
@@ -30,6 +30,7 @@ Please ⭐Star the project if you want to support me. (لطفا به این پر
 - 📊 **Auto indexing:** Generates a Markdown file with detailed info for all videos
 - 🛜️ **Thumbnails:** Automatically fetched for each video
 - ✂️ **Smart file splitting:** If output size exceeds limit, automatically split into parts
+- 🧹 **One-click cleanup:** Clear the download folder with a separate workflow
 - 💯 **Completely free:** No API keys or extra registration needed
 
 ---
@@ -146,4 +147,41 @@ sudo apt install 7zip
 ```
 7z x [your_file_name].mp4.zip
 ```
+
 ---
+
+## 🗑️ Cleaning Up
+
+Over time, downloaded files can accumulate and take up space in your repository. To clean the `download/` folder:
+
+### How to Run the Cleanup Workflow
+
+1. Go to the **Actions** tab in your repository.
+2. Click on **🧹 Clear Download Folder** in the sidebar.
+3. Click the **Run workflow** button.
+4. Confirm by clicking **Run workflow** again.
+
+> ⚠️ **Note:** This action permanently deletes all files in the `download/` folder. Make sure you've saved any files you need before running it.
+
+### When to Use Cleanup
+
+- Before starting a large new download to ensure enough space
+- After you've successfully downloaded and saved your files locally
+- When your GitHub repository storage is getting full (GitHub has limits on repository size)
+
+### Cleanup vs Manual Deletion
+
+| Method | Pros | Cons |
+|---|---|---|
+| **Cleanup Workflow** | One click, automated, no coding | Deletes everything in the folder |
+| **Manual Deletion** | Selective deletion | Requires git commands or web UI navigation |
+
+---
+
+## ❓ Troubleshooting
+
+| Issue | Solution |
+|---|---|
+| No files appear after download | Check Settings > Actions > General > Workflow permissions = Read and write |
+| Cleanup workflow fails | Ensure the workflow has write permissions (same as step 3) |
+| Split files won't extract | Make sure all parts (.zip, .z01, .z02, etc.) are in the same folder |
